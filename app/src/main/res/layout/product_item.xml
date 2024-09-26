@@ -8,7 +8,7 @@
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="407dp"
         android:layout_height="match_parent">
 
         <ImageView
@@ -34,17 +34,45 @@
             app:layout_constraintStart_toEndOf="@+id/imageTxt"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/priceTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
             android:text=" price:$"
             android:textColor="#2196F3"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageTxt"
+            app:layout_constraintStart_toStartOf="@+id/NameTxt"
             app:layout_constraintTop_toBottomOf="@+id/NameTxt" />
+
+        <TextView
+            android:id="@+id/descriptionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:text=" Description"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/priceTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/priceTxt"
+            app:layout_constraintTop_toBottomOf="@+id/priceTxt" />
+
+        <TextView
+            android:id="@+id/catagoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" catagory"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/descriptionTxt"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTxt" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

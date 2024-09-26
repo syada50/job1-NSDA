@@ -4,4 +4,6 @@ data class Products(
     var images:List<String>,
     val title:String,
     val price:Double,
+    val description: String,
+    val category: String,
 )
