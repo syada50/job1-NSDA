@@ -29,7 +29,7 @@ class ProductAdapter(private val products: List<Products>) : RecyclerView.Adapte
         private val productName: TextView = itemView.findViewById(R.id.NameTxt)
         private val productPrice: TextView = itemView.findViewById(R.id.priceTxt)
         private val productDescription: TextView =itemView.findViewById(R.id.descriptionTxt)
-        private val productCategory: TextView= itemView.findViewById(R.id.catagoryTxt)
+        private val updatedAt: TextView= itemView.findViewById(R.id.updatedAt)
         fun bind(product: Products) {
             Glide.with(itemView)
                 .load(product.images[0])
@@ -37,7 +37,7 @@ class ProductAdapter(private val products: List<Products>) : RecyclerView.Adapte
             productName.text = product.title
             productPrice.text = "$${product.price}"
             productDescription.text= product.description
-            productCategory.text = product.category
+            updatedAt.text = product.updatedAt
         }
     }
 }
